@@ -19,23 +19,23 @@ function Post({
     return (
         <div className="post">
             <div className="post__avatar">
-                <Avatar src="https://avatars2.githubusercontent.com/u/66390177?s=460&u=07504b25344c9169db1a7b56916434cba8cc26bf&v=4"/>
+                <Avatar src={avatar}/>
             </div>
             <div className="post__body">
                 <div className="post__header">
                     <div className="post__headerText">
                         <h3>
-                            Oscar Garcia{" "} 
+                            {displayName}{" "} 
                             <span className="post__headerSpecial">
-                                <VerifiedUserIcon className="post__badge" /> @OscarGarcia327
+                            {verified &&<VerifiedUserIcon className="post__badge" />} @{username}
                             </span>
                         </h3>
                     </div>
                     <div className="post__headerDescription">
-                        <p> Visca Barca </p>
+                        <p> {text} </p>
                     </div>
                 </div>
-                <img src="https://media.giphy.com/media/3oriNVc5SDHOsWcCM8/giphy.gif" alt=" "/>
+                <img src={image} alt=" "/>
                 <div className="post__footer">
                     <ChatBubbleOutlineIcon fontSize="small" />
                     <RepeatIcon fontSize="small" />
