@@ -13,6 +13,6 @@ const firebaseConfig = {
   };
 
   //connect firebase to the backend 
-  const firebase = firebase.initializeApp(firebaseConfig);
+  const firebaseApp = firebase.initializeApp(firebaseConfig);
   const db = firebaseApp.firestore();
   export default db;
