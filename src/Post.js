@@ -17,7 +17,7 @@ const Post = forwardRef(({
     avatar
 }, ref) => {
     return (
-        <div className="post">
+        <div className="post" ref={ref}>
             <div className="post__avatar">
                 <Avatar src={avatar}/>
             </div>
